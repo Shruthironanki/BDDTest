@@ -27,7 +27,7 @@ import org.testng.annotations.Test;
 	    @Before
 	    public void setUp() {
 	    	
-	    	System.out.println("abc");
+	    	System.out.println("Browser Loading");
 	    	
 	    	WebDriverManager.chromedriver().setup();
 	    	driver = new ChromeDriver();
