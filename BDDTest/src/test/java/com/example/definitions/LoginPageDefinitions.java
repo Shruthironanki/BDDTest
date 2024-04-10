@@ -1,23 +1,19 @@
 package com.example.definitions;
 
-	import io.cucumber.java.After;
-	import io.cucumber.java.Before;
-	import io.cucumber.java.en.Given;
-	import io.cucumber.java.en.Then;
-	import io.cucumber.java.en.When;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
-
-//import io.github.bonigarcia.wdm.WebDriverManager;
-	import org.openqa.selenium.By;
-	import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.chrome.ChromeDriver;
-	//import org.openqa.selenium.chrome.ChromeOptions;
-	import org.testng.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-
+//import org.openqa.selenium.chrome.ChromeOptions;
 //import java.time.Duration;
 	 
 	public class LoginPageDefinitions {
