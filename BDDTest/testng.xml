@@ -6,4 +6,10 @@
             <class name="com.example.runner.CucumberRunnerTests"/>
         </classes>
     </test> <!-- Test -->
+    
+    <!-- Listners implemented in below location -->
+  <listeners>
+  		<listener class-name="com.example.Listeners.ITestListenerImpl"></listener>
+  </listeners>
+        
 </suite> <!-- Suite -->
