@@ -9,8 +9,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.TestNGCucumberRunner;
     
-@CucumberOptions(features = {"src/test/resources/features"}, tags = "@Regression", glue = {"com.example.definitions"},
-                 plugin = {})
+@CucumberOptions(features = {"src/test/resources/features"}, tags = "@Regression", glue = {"com.example.definitions"})
     
 public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
 	
@@ -21,17 +20,6 @@ public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
     }
 
-//    @Test(dataProvider = "features")    
-//    public void feature(PickleEventWrapper eventwrapper,CucumberFeatureWrapper cucumberFeature) throws Throwable {
-//    	//testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
-//    	testNGCucumberRunner.runScenario(eventwrapper.getPickleEvent());
-//    }
-//    
-//    @DataProvider//(parallel=true)
-//    public Object[][] features() {
-//       /return testNGCucumberRunner.provideFeatures();    	
-//    	 return testNGCucumberRunner.provideScenarios();
-//    }
     
     @AfterClass(alwaysRun = true)
     public void tearDownClass() {    	

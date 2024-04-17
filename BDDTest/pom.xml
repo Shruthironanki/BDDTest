@@ -65,7 +65,27 @@
     <version>2.1.0-alpha1</version>
     <scope>test</scope>
 </dependency>
- 
+		
+		<!-- Dependency for excel data-->
+		<dependency>
+			<groupId>com.codoid.products</groupId>
+			<artifactId>fillo</artifactId>
+			<version>1.16</version>
+		</dependency>
+		
+		<!-- Dependecies for Extent Report-->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.0.6</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.23</version>
+		</dependency>
+		
   </dependencies>
   <build>
     <plugins>
