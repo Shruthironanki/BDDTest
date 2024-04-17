@@ -8,8 +8,13 @@ import org.testng.annotations.BeforeClass;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.TestNGCucumberRunner;
-    
-@CucumberOptions(features = {"src/test/resources/features"}, tags = "@Regression", glue = {"com.example.definitions"})
+
+@CucumberOptions(features = {"src/test/resources/features"}, 
+				glue = {"com.example.definitions"},
+				tags = "Regression")
+				//tags = "@ValidCredentials or ~@InvalidCredentials")
+
+				
     
 public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
 	
