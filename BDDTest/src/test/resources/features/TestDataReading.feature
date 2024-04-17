@@ -1,4 +1,4 @@
-@RegressionT
+@Regression
 Feature: Test Data Reading for the test cases
 
 #Youtube test data reading sample test case 

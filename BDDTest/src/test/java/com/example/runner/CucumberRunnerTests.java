@@ -11,8 +11,8 @@ import io.cucumber.testng.TestNGCucumberRunner;
 
 @CucumberOptions(features = {"src/test/resources/features"}, 
 				glue = {"com.example.definitions"},
-				tags = "Regression")
-				//tags = "@ValidCredentials or ~@InvalidCredentials")
+				tags = "@Regression")
+				
 
 				
     

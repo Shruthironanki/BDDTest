@@ -35,6 +35,11 @@ import com.example.PageObjects.LoginPage;
 		private WebDriver driver;
 		PropertiesFileReader obj= new PropertiesFileReader();
 		
+		@Before
+		public void beforeScenario() {		
+			System.out.println("Started execution for the scenario ");
+		}
+		
 	    @Given("User is on HRMLogin page")
 	    public void loginTest() throws Throwable {
 	 
@@ -93,8 +98,8 @@ import com.example.PageObjects.LoginPage;
 			 				
 				logInfo.pass("User logs in successfully.");
 				//logInfo.addScreenCaptureFromPath(captureScreenShot(driver));
-				System.out.println("closing browser");
-				driver.quit();
+//				System.out.println("closing browser");
+//				driver.quit();
 				
 			} catch (AssertionError | Exception e) {
 				testStepHandle("FAIL",driver,logInfo,e);			
@@ -119,8 +124,8 @@ import com.example.PageObjects.LoginPage;
 				
 				logInfo.pass("Validated Error Message");
 				//logInfo.addScreenCaptureFromPath(captureScreenShot(driver));
-				System.out.println("closing browser");
-				driver.quit();
+//				System.out.println("closing browser");
+//				driver.quit();
 				
 			} catch (AssertionError | Exception e) {
 				testStepHandle("FAIL",driver,logInfo,e);			
@@ -128,7 +133,14 @@ import com.example.PageObjects.LoginPage;
 	 
 	    }
 
-
+	    @After("@ValidCredentials or @InvalidCredentials")
+		public void AfterScenario() {
+			System.out.println("Completed execution for the scenario");
+			
+			driver.quit();
+			
+		}
+	    
 	 
 	}
 	
