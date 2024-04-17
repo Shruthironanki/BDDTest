@@ -26,7 +26,9 @@ public class BrowserUtility {
 			driver.get(url);
 			//Thread.sleep(5000);
 			//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TIMEOUT));
-			driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+			
 			return driver;	
 		}else 
 		if("IE".equals(browserName))
