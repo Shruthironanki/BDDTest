@@ -30,7 +30,7 @@ public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
     public void tearDownClass() {    	
         testNGCucumberRunner.finish();    
         
-	//adding and removing
+
     }
     
 }
